@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var loginCadastrado = "venanciomota";
+    var senhaCadastrada = "nanciove";
+
+    var maximoTentativa = 3;
+    var tentativaAtutal = 1;
+
+    while (tentativaAtutal <= maximoTentativa){
+
+        var loginInformado = prompt("Digite seu login");
+        var senhaInformada = prompt("Digite sua senha");
+
+    if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+
+            alert("Bem vindo ao sistema " + loginInformado);
+            tentativaAtutal = maximoTentativa;
+            
+    } else { 
+
+            alert("Senha inválida.Tente novamente");
+    }
+            tentativaAtutal = tentativaAtutal + 1;
+
+    }
+</script>
